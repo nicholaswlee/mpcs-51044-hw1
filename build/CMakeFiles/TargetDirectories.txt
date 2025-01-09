@@ -1,0 +1,3 @@
+/Users/nicholaslee/Desktop/Fourth_Year/Quarter_2/MPCS_51044/week1/hw1/build/CMakeFiles/pascal.dir
+/Users/nicholaslee/Desktop/Fourth_Year/Quarter_2/MPCS_51044/week1/hw1/build/CMakeFiles/edit_cache.dir
+/Users/nicholaslee/Desktop/Fourth_Year/Quarter_2/MPCS_51044/week1/hw1/build/CMakeFiles/rebuild_cache.dir
