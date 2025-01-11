@@ -4,5 +4,7 @@ set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 find_package(fmt REQUIRED)
 
-add_executable(pascal hw1.cpp)
+add_executable(pascal hw1-2.cpp)
+add_executable(pascal-brick hw1-3.cpp)
 target_link_libraries(pascal fmt::fmt)
+target_link_libraries(pascal-brick fmt::fmt)

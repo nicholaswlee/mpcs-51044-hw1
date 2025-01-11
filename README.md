@@ -65,24 +65,20 @@ nicholaslee@Nicholass-MacBook-Pro-2 build % ./vector_simple_demo
 1, 4, 16, %                           
 ```
 ## Exercise 2
-See hw1.cpp
+See hw1-2.cpp
 ```
 nicholaslee@Nicholass-MacBook-Pro-2 hw1 % cmake --build ./build
 -- Configuring done (0.1s)
 -- Generating done (0.0s)
 -- Build files have been written to: /Users/nicholaslee/Desktop/Fourth_Year/Quarter_2/MPCS_51044/week1/hw1/build
-[ 50%] Building CXX object CMakeFiles/pascal.dir/hw1.cpp.o
-[100%] Linking CXX executable pascal
-[100%] Built target pascal
-nicholaslee@Nicholass-MacBook-Pro-2 hw1 % cmake --build ./build
--- Configuring done (0.1s)
--- Generating done (0.0s)
--- Build files have been written to: /Users/nicholaslee/Desktop/Fourth_Year/Quarter_2/MPCS_51044/week1/hw1/build
-[100%] Built target pascal
+[ 50%] Built target pascal
+[ 75%] Building CXX object CMakeFiles/pascal-brick.dir/hw1-3.cpp.o
+[100%] Linking CXX executable pascal-brick
+[100%] Built target pascal-brick
 nicholaslee@Nicholass-MacBook-Pro-2 hw1 % cd build 
 nicholaslee@Nicholass-MacBook-Pro-2 build % ls
-CMakeCache.txt          CMakeFiles              Makefile                cmake_install.cmake     pascal
-nicholaslee@Nicholass-MacBook-Pro-2 build % ./pascal 
+CMakeCache.txt          CMakeFiles              Makefile                cmake_install.cmake     pascal                  pascal-brick
+nicholaslee@Nicholass-MacBook-Pro-2 build % ./pascal
 1 
 1 1 
 1 2 1 
@@ -91,42 +87,14 @@ nicholaslee@Nicholass-MacBook-Pro-2 build % ./pascal
 1 5 10 10 5 1 
 1 6 15 20 15 6 1 
 1 7 21 35 35 21 7 1 
-                      1                      
-                   1     1                   
-                1     2     1                
-             1     3     3     1             
-          1     4     6     4     1          
-       1     5    10    10     5     1       
-    1     6    15    20    15     6     1    
- 1     7    21    35    35    21     7     1 
 ```
-## Exercsie 3
-See hw1.cpp
+## Exercise 3
+See hw1-3.cpp
 ```
-nicholaslee@Nicholass-MacBook-Pro-2 hw1 % cmake --build ./build
--- Configuring done (0.1s)
--- Generating done (0.0s)
--- Build files have been written to: /Users/nicholaslee/Desktop/Fourth_Year/Quarter_2/MPCS_51044/week1/hw1/build
-[ 50%] Building CXX object CMakeFiles/pascal.dir/hw1.cpp.o
-[100%] Linking CXX executable pascal
-[100%] Built target pascal
-nicholaslee@Nicholass-MacBook-Pro-2 hw1 % cmake --build ./build
--- Configuring done (0.1s)
--- Generating done (0.0s)
--- Build files have been written to: /Users/nicholaslee/Desktop/Fourth_Year/Quarter_2/MPCS_51044/week1/hw1/build
-[100%] Built target pascal
 nicholaslee@Nicholass-MacBook-Pro-2 hw1 % cd build 
 nicholaslee@Nicholass-MacBook-Pro-2 build % ls
-CMakeCache.txt          CMakeFiles              Makefile                cmake_install.cmake     pascal
-nicholaslee@Nicholass-MacBook-Pro-2 build % ./pascal 
-1 
-1 1 
-1 2 1 
-1 3 3 1 
-1 4 6 4 1 
-1 5 10 10 5 1 
-1 6 15 20 15 6 1 
-1 7 21 35 35 21 7 1 
+CMakeCache.txt          CMakeFiles              Makefile                cmake_install.cmake     pascal                  pascal-brick
+nicholaslee@Nicholass-MacBook-Pro-2 build % ./pascal-brick 
                       1                      
                    1     1                   
                 1     2     1                
@@ -165,6 +133,7 @@ exercise4.cpp:5:20: error: expected expression
 
 ## Exercise 5
 - The reason is C++ and not ++C, is because ++ after the variable name is the post-increment operator. Since C++ is built on C, we are incrementing on C but C is still the base language and is used. If it were to be ++C, that is more like an update of C, which is not what we are doing.
+
 # References
 - https://cmake.org/cmake/help/v3.20/guide/tutorial/index.html?highlight=destination#:~:text=The%20easiest%20way%20to%20enable,11%20and%20CMAKE_CXX_STANDARD_REQUIRED%20to%20True.
     - To understand how to set the C++ standard in CMakeLists.txt
