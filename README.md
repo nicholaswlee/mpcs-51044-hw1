@@ -67,6 +67,7 @@ nicholaslee@Nicholass-MacBook-Pro-2 build % ./vector_simple_demo
 ## Exercise 2
 See hw1-2.cpp
 ```
+nicholaslee@Nicholass-MacBook-Pro-2 hw1 % cmake -S . -B build/    
 nicholaslee@Nicholass-MacBook-Pro-2 hw1 % cmake --build ./build
 -- Configuring done (0.1s)
 -- Generating done (0.0s)
@@ -91,6 +92,15 @@ nicholaslee@Nicholass-MacBook-Pro-2 build % ./pascal
 ## Exercise 3
 See hw1-3.cpp
 ```
+nicholaslee@Nicholass-MacBook-Pro-2 hw1 % cmake -S . -B build/    
+nicholaslee@Nicholass-MacBook-Pro-2 hw1 % cmake --build ./build
+-- Configuring done (0.1s)
+-- Generating done (0.0s)
+-- Build files have been written to: /Users/nicholaslee/Desktop/Fourth_Year/Quarter_2/MPCS_51044/week1/hw1/build
+[ 50%] Built target pascal
+[ 75%] Building CXX object CMakeFiles/pascal-brick.dir/hw1-3.cpp.o
+[100%] Linking CXX executable pascal-brick
+[100%] Built target pascal-brick
 nicholaslee@Nicholass-MacBook-Pro-2 hw1 % cd build 
 nicholaslee@Nicholass-MacBook-Pro-2 build % ls
 CMakeCache.txt          CMakeFiles              Makefile                cmake_install.cmake     pascal                  pascal-brick
